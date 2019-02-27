@@ -1,0 +1,6 @@
+<h1>Available Cakes</h1>
+<ul>
+<% @cakes.each do |c| %>
+  <li><%= link_to c.name, cake_path(c) %></li>
+<% end %>
+</ul>
