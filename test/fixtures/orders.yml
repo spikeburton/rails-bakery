@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  cake: one
+  order_date: 2019-02-27 16:41:20
+  fulfilled: false
+
+two:
+  user: two
+  cake: two
+  order_date: 2019-02-27 16:41:20
+  fulfilled: false
