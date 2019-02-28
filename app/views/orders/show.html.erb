@@ -1,0 +1,21 @@
+<h1>Order Details</h1>
+<table style="text-align: left; width: 100%">
+  <thead>
+    <tr>
+      <th>Order ID</th>
+      <th>User</th>
+      <th>Cake</th>
+      <th>Order Date</th>
+      <th>Fulfilled</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @order.id %></td>
+      <td><%= @order.user.name %></td>
+      <td><%= @order.cake.name %></td>
+      <td><%= @order.order_date_str %></td>
+      <td><%= @order.fulfilled_str %></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,23 @@
+<h1>All Orders</h1>
+<table style="text-align: left; width: 100%">
+  <thead>
+    <tr>
+      <th>Order ID</th>
+      <th>User</th>
+      <th>Cake</th>
+      <th>Order Date</th>
+      <th>Fulfilled</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @orders.each do |o| %>
+    <tr>
+      <td><%= link_to o.id, order_path(o) %></td>
+      <td><%= o.user.name %></td>
+      <td><%= o.cake.name %></td>
+      <td><%= o.order_date_str %></td>
+      <td><%= o.fulfilled_str %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

@@ -11,8 +11,8 @@
   <% @user.orders.each do |o| %>
     <tr>
     <td><%= o.cake.name %></td>
-    <td><%= o.order_date.strftime("%B %e, %Y at %l:%M %P") %></td>
-    <td><%= o.fulfilled ? "Yes" : "No" %></td>
+    <td><%= o.order_date_str %></td>
+    <td><%= o.fulfilled_str %></td>
     </tr>
   <% end %>
   </tbody>
