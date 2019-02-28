@@ -1,0 +1,19 @@
+<h1><%= "Orders for #{@user.name}" %></h1>
+<table style="text-align: left">
+  <thead>
+    <tr>
+      <th>Cake</th>
+      <th>Date Ordered</th>
+      <th>Fulfilled</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @user.orders.each do |o| %>
+    <tr>
+    <td><%= o.cake.name %></td>
+    <td><%= o.order_date.strftime("%B %e, %Y at %l:%M %P") %></td>
+    <td><%= o.fulfilled ? "Yes" : "No" %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

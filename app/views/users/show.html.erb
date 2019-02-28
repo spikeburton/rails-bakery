@@ -1,0 +1,8 @@
+<% if !@user.orders.empty? %>
+  <%= render "orders" %>
+<% else %>
+  <h2><%= "#{@user.name}, Welcome!" %></h2>
+  <p>It looks like you haven't placed any orders yet. Let's fix that!</p>
+<% end %>
+<br>
+<%= link_to "Place New Order", new_order_path %>
